@@ -1,0 +1,219 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>xAudic UI Creation</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<p align="center"><font size="5"><strong>Creating a new User
+Interface For xAudic</strong></font></p>
+
+<blockquote>
+    <p align="left">These instructions show you how to create a
+    new nib based User Interface for xAudic. Although they
+    show the steps to create a UI from scratch, it is much easier
+    to take one of the include UI's and modify it. They can be
+    found in xAudic.app/Contents/Resources/UIPlugins.</p>
+</blockquote>
+
+<ul>
+    <li>Download the xAudic interface builder palette from <a
+        href="http://www.xaudic.net">http://www.xaudic.net</a><p>You must copy
+        the palette to /Developer/Palettes.</p>
+    </li>
+    <li>Start InterfaceBuilder and load the palette<p>Go to
+        InterfaceBuilder-&gt;preferences and add the new palette.</p>
+    </li>
+</ul>
+
+<ul>
+    <li>Create new empty Cocoa nib<br>
+        </li>
+    <li>Drop drag the &quot;Nib Bases User Interface
+        Controller&quot; (or NibUserInterface) object from the
+        palette into the instances tab.<br>
+        </li>
+    <li>Connect the &quot;window&quot; outlet in your
+        NibUserInterface to the window object<br>
+        </li>
+    <li>Drop a window in<br>
+        </li>
+    <li>Create your gui.<p>You can have the following controls in
+        your interface, which should be connected to the given
+        outlet in the NibUserInterface. The controls target
+        action should be set the given action in the
+        NibUserInterface<br>
+        </p>
+        <table border="1" width="90%">
+            <tr>
+                <td><strong>Funtion</strong></td>
+                <td><strong>Outlet</strong></td>
+                <td><strong>Action</strong></td>
+            </tr>
+            <tr>
+                <td>The UserInterfaces Window</td>
+                <td>window</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Previous Playlist Entry Button</td>
+                <td>prevButton</td>
+                <td>previous:</td>
+            </tr>
+            <tr>
+                <td>Next Playlist Entry Button</td>
+                <td>nextButton</td>
+                <td>next:</td>
+            </tr>
+            <tr>
+                <td>Pause</td>
+                <td>pauseButton</td>
+                <td>pause:</td>
+            </tr>
+            <tr>
+                <td>Stop</td>
+                <td>stopButton</td>
+                <td>stop:</td>
+            </tr>
+            <tr>
+                <td>Play</td>
+                <td>playButton</td>
+                <td>play:</td>
+            </tr>
+            <tr>
+                <td>Eject</td>
+                <td>ejectButton</td>
+                <td>eject:</td>
+            </tr>
+            <tr>
+                <td>Change Volume</td>
+                <td>volumeSlider</td>
+                <td>volume_slider:</td>
+            </tr>
+            <tr>
+                <td>Change Song Position</td>
+                <td>songPositionSlider</td>
+                <td>song_position_slider:</td>
+            </tr>
+            <tr>
+                <td>Toggle Shuffle</td>
+                <td>shuffleCheckBox</td>
+                <td>shuffle:</td>
+            </tr>
+            <tr>
+                <td>Toggle Repeat </td>
+                <td>repeatCheckBox</td>
+                <td>repeat:</td>
+            </tr>
+            <tr>
+                <td>Displays the Song Title</td>
+                <td>songTitle</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Display the Bitrate</td>
+                <td>bitrateText</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Diaplay the Sample Rate</td>
+                <td>sampleRateText</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Display the Songs Time</td>
+                <td>timeText</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Displays Mono or Stereo via Text</td>
+                <td>stereoText</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Displays Mono or Stereo via a CheckBox</td>
+                <td>stereoCheckBox</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Displays Mono or Stereo via RadioButtons</td>
+                <td>stereoRadioBox</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Display the FileInfo Box for the playing song</td>
+                <td>&nbsp;</td>
+                <td>showFileInfoBox:</td>
+            </tr>
+        </table>
+    </li>
+    <li>OPTIONAL: Add a VisualizationBox to your UserInterface<p>Drag
+        the picture of the Spectrum anylizer from the palette
+        into your window. This a NSBox that will display the
+        active visualiztion. The box can set to any size and it's
+        attributes can be changed freely. Note that although you
+        can make the view any size, some visualization plugins
+        may not be sizable. These visualation will be centered
+        inside the box.</p>
+    </li>
+    <li>OPTIONAL: Add a PlaylistEditor to your UserInterface<p>Drag
+        the picture of the PlaylistEditor from the palette into
+        your window.</p>
+    </li>
+    <li>Setup a WindowMovingView if needed.<p>If your window is
+        setup to be transparent, you'll need a place for the user
+        to grab on and move it. You can place a WindowMovingView
+        in your nib to accomplish this. Drag the WindowMovingView
+        from the xAudic palette to your window (it's the
+        double arrows)</p>
+    </li>
+</ul>
+
+<ul>
+    <li>Setup options.<p>Click on the NibUserInterface in the
+        instances window and go to Attributes in the Inpector
+        window.</p>
+        <p>Current Window Options:</p>
+        <ul>
+            <li>No Title Bar - set to selected to have the title
+                bar removed from your window.</li>
+            <li>Click anywhere to move - set to selected to allow
+                the window to be moved by click in anywhere on it</li>
+            <li>Window Background Color - the color to set the
+                window background to. This should be a
+                NSColorWell.</li>
+            <li>Window Opaque - Should the window be opaque? </li>
+            <li>Window Alpha Value - The alpha value for the
+                window.<br>
+                </li>
+        </ul>
+        <p>Current Transport Button Options:</p>
+        <ul>
+            <li>Image Dims When Disabled - Should the button
+                image be dimmed when disabled. (Does not seem to
+                work? AppKit Bug??)</li>
+            <li>Shows Border Only While Mouse Inside - show the
+                border of the button only when the mouse is
+                inside.</li>
+            <li>Highlights By - how the button is highlighed.
+                (see NSButtonCell documentation)</li>
+            <li>Shows State By - how the buttons show there
+                state. (again, see NSButtonCell documentation)<br>
+                </li>
+        </ul>
+    </li>
+    <li>Save your nib to one of the following directories.<br>
+        <ul>
+            <li>~/Library/xAudic/Plugins</li>
+            <li>/System/Library/xAudic/Plugins</li>
+            <li>/Network/Library/xAudic/Plugins</li>
+            <li>/Local/Library/xAudic/Plugins</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

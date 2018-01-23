@@ -1,0 +1,11 @@
+
+xAudic TODO
+
+- implement eq presets
+- implement skin mask stuff
+- implement effect plugin ordering (in Preferences and Effect processing code)
+- documentation
+- internationalization
+- add URL box
+- ID3 tag editing
+- get mono mp3's to work

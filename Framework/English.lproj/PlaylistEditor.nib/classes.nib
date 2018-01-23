@@ -1,0 +1,93 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {cancel = id; ok = id; show = id; }; 
+            CLASS = NibObject; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {tableViewAction = id; tableViewDoubleAction = id; }; 
+            CLASS = PlaylistEditor; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {groupView = id; tableScrollView = id; tableView = id; }; 
+            SUPERCLASS = NibObject; 
+        }, 
+        {CLASS = Plugin; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                eject = id; 
+                next = id; 
+                pause = id; 
+                play = id; 
+                playlistAddDir = id; 
+                playlistAddFile = id; 
+                playlistAddURL = id; 
+                playlistCropSelection = id; 
+                playlistInvertSelection = id; 
+                playlistNew = id; 
+                playlistOpen = id; 
+                playlistRandomize = id; 
+                playlistRemoveAll = id; 
+                playlistRemoveSelected = id; 
+                playlistReverse = id; 
+                playlistSave = id; 
+                playlistSelectAll = id; 
+                playlistSortByFilename = id; 
+                playlistSortByPathPlusFileName = id; 
+                playlistSortByTitle = id; 
+                playlistZeroSelection = id; 
+                previous = id; 
+                repeat = id; 
+                showFileInfoBox = id; 
+                shuffle = id; 
+                songposition_slider = id; 
+                stop = id; 
+                volume_slider = id; 
+            }; 
+            CLASS = UITie; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                eject = id; 
+                next = id; 
+                pause = id; 
+                play = id; 
+                playlistAddDir = id; 
+                playlistAddFile = id; 
+                playlistAddURL = id; 
+                playlistCropSelection = id; 
+                playlistInvertSelection = id; 
+                playlistNew = id; 
+                playlistOpen = id; 
+                playlistRandomize = id; 
+                playlistRemoveAll = id; 
+                playlistRemoveSelected = id; 
+                playlistReverse = id; 
+                playlistSave = id; 
+                playlistSelectAll = id; 
+                playlistSortByFilename = id; 
+                playlistSortByPathPlusFileName = id; 
+                playlistSortByTitle = id; 
+                playlistZeroSelection = id; 
+                previous = id; 
+                repeat = id; 
+                showFileInfoBox = id; 
+                shuffle = id; 
+                songposition_slider = id; 
+                stop = id; 
+                volume_slider = id; 
+            }; 
+            CLASS = UserInterface; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = Plugin; 
+        }, 
+        {CLASS = VisEntry; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = Visualization; LANGUAGE = ObjC; SUPERCLASS = NSView; }
+    ); 
+    IBVersion = 1; 
+}

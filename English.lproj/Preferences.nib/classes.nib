@@ -1,0 +1,78 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {show = id; }; 
+            CLASS = NibObject; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                about = id; 
+                browser_action = id; 
+                browser_doubleaction = id; 
+                configure = id; 
+                enabled = id; 
+                start = id; 
+                stop = id; 
+            }; 
+            CLASS = PluginPreference; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {browser = id; button_matrix = id; enabled_box = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                aboutOutputPlugin = id; 
+                aboutUI = id; 
+                cancel = id; 
+                configureOutputPlugin = id; 
+                configureUI = id; 
+                defaults = id; 
+                o_plugin_action = id; 
+                ok = id; 
+                uiAction = id; 
+                valueChanged = id; 
+            }; 
+            CLASS = Preferences; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                defaultExtension = id; 
+                effect_p = id; 
+                generalView = id; 
+                general_p = id; 
+                inputView = id; 
+                input_p = id; 
+                o_button_matrix = id; 
+                o_plugin_popup = id; 
+                slowCPU = id; 
+                tabView = id; 
+                ui_about = id; 
+                ui_config = id; 
+                ui_popup = id; 
+                vis_p = id; 
+            }; 
+            SUPERCLASS = NibObject; 
+        }, 
+        {
+            CLASS = TabView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                tab1 = id; 
+                tab1Title = id; 
+                tab2 = id; 
+                tab2Title = id; 
+                tab3 = id; 
+                tab3Title = id; 
+                tab4 = id; 
+                tab4Title = id; 
+                tab5 = id; 
+                tab5Title = id; 
+            }; 
+            SUPERCLASS = NSTabView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

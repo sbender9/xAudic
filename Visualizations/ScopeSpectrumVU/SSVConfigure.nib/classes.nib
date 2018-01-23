@@ -1,0 +1,28 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {cancel = id; ok = id; show = id; }; 
+            CLASS = NibObject; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = SSVConfigure; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                falloff = id; 
+                linesOrBars = id; 
+                peaks = id; 
+                peaksFalloff = id; 
+                refreshRate = id; 
+                scopeMode = id; 
+                style = id; 
+                vuMode = id; 
+            }; 
+            SUPERCLASS = NibObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

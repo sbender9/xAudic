@@ -1,0 +1,58 @@
+{
+    IBClasses = (
+        {CLASS = Effect; LANGUAGE = ObjC; SUPERCLASS = Plugin; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = General; LANGUAGE = ObjC; SUPERCLASS = Plugin; }, 
+        {CLASS = Input; LANGUAGE = ObjC; SUPERCLASS = Plugin; }, 
+        {CLASS = Output; LANGUAGE = ObjC; SUPERCLASS = Plugin; }, 
+        {CLASS = Plugin; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                eject = id; 
+                next = id; 
+                pause = id; 
+                play = id; 
+                playlistAddDir = id; 
+                playlistAddFile = id; 
+                playlistAddURL = id; 
+                playlistCropSelection = id; 
+                playlistInvertSelection = id; 
+                playlistNew = id; 
+                playlistOpen = id; 
+                playlistRandomize = id; 
+                playlistRemoveAll = id; 
+                playlistRemoveSelected = id; 
+                playlistReverse = id; 
+                playlistSave = id; 
+                playlistSelectAll = id; 
+                playlistSortByFilename = id; 
+                playlistSortByPathPlusFileName = id; 
+                playlistSortByTitle = id; 
+                playlistZeroSelection = id; 
+                previous = id; 
+                repeat = id; 
+                showFileInfoBox = id; 
+                shuffle = id; 
+                songposition_slider = id; 
+                stop = id; 
+                volume_slider = id; 
+            }; 
+            CLASS = UserInterface; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = Plugin; 
+        }, 
+        {
+            ACTIONS = {
+                hideShowEq = id; 
+                hideShowMain = id; 
+                hideShowPlaylist = id; 
+                showSkinBrowser = id; 
+            }; 
+            CLASS = WinAmp; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {eqMenu = id; skinBrowser = id; sortMenu = id; }; 
+            SUPERCLASS = UserInterface; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,5 @@
+
+It's almost very simple. Just type 'pbxbuild -buildstyle Deployment install'. It will install into your $HOME/Applications.
+
+
+

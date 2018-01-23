@@ -1,0 +1,67 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = NibUserInterface; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bitRateText = id; 
+                nextButton = id; 
+                pauseButton = id; 
+                playButton = id; 
+                prevButton = id; 
+                repeatCheckBox = id; 
+                sampleRateText = id; 
+                shuffleCheckBox = id; 
+                songPositionSlider = id; 
+                songTitle = id; 
+                stereoCheckBox = id; 
+                stereoRadioBox = id; 
+                stereoText = id; 
+                stopButton = id; 
+                timeText = id; 
+                volumeSlider = id; 
+                window = id; 
+            }; 
+            SUPERCLASS = UserInterface; 
+        }, 
+        {CLASS = Plugin; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                eject = id; 
+                next = id; 
+                pause = id; 
+                play = id; 
+                playlistAddDir = id; 
+                playlistAddFile = id; 
+                playlistAddURL = id; 
+                playlistCropSelection = id; 
+                playlistInvertSelection = id; 
+                playlistNew = id; 
+                playlistOpen = id; 
+                playlistRandomize = id; 
+                playlistRemoveAll = id; 
+                playlistRemoveSelected = id; 
+                playlistReverse = id; 
+                playlistSave = id; 
+                playlistSelectAll = id; 
+                playlistSortByFilename = id; 
+                playlistSortByPathPlusFileName = id; 
+                playlistSortByTitle = id; 
+                playlistZeroSelection = id; 
+                previous = id; 
+                repeat = id; 
+                showFileInfoBox = id; 
+                shuffle = id; 
+                songposition_slider = id; 
+                stop = id; 
+                volume_slider = id; 
+            }; 
+            CLASS = UserInterface; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = Plugin; 
+        }, 
+        {CLASS = VisualizationBox; LANGUAGE = ObjC; SUPERCLASS = NSBox; }
+    ); 
+    IBVersion = 1; 
+}

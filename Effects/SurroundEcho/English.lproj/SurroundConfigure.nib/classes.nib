@@ -1,0 +1,27 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {cancel = id; ok = id; show = id; }; 
+            CLASS = NibObject; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {valueChanged = id; }; 
+            CLASS = SurroundConfigure; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                delaySlider = id; 
+                delayText = id; 
+                feedbackSlider = id; 
+                feedbackText = id; 
+                volumeSlider = id; 
+                volumeText = id; 
+            }; 
+            SUPERCLASS = NibObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

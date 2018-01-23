@@ -1,0 +1,49 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {useId3 = id; useProxy = id; }; 
+            CLASS = Configure; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bufferSize = id; 
+                host = id; 
+                hostT = id; 
+                port = id; 
+                portT = id; 
+                preBuffer = id; 
+                tagFormat = id; 
+                tagFormatT = id; 
+                timeOut = id; 
+                useProxy = id; 
+                useTags = id; 
+            }; 
+            SUPERCLASS = NibObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {cancel = id; ok = id; show = id; }; 
+            CLASS = NibObject; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = TabView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                tab1 = id; 
+                tab1Title = id; 
+                tab2 = id; 
+                tab2Title = id; 
+                tab3 = id; 
+                tab3Title = id; 
+                tab4 = id; 
+                tab4Title = id; 
+                tab5 = id; 
+                tab5Title = id; 
+            }; 
+            SUPERCLASS = NSTabView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

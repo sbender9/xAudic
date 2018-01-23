@@ -1,0 +1,69 @@
+{
+    IBClasses = (
+        {CLASS = Effect; LANGUAGE = ObjC; SUPERCLASS = Plugin; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = General; LANGUAGE = ObjC; SUPERCLASS = Plugin; }, 
+        {CLASS = Input; LANGUAGE = ObjC; SUPERCLASS = Plugin; }, 
+        {CLASS = Output; LANGUAGE = ObjC; SUPERCLASS = Plugin; }, 
+        {CLASS = Plugin; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {tableViewAction = id; tableViewDoubleAction = id; }; 
+            CLASS = Sample; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bit_rate = id; 
+                mainWindow = id; 
+                pause = id; 
+                playlistbox = id; 
+                repeat = id; 
+                sample_rate = id; 
+                shuffle = id; 
+                song_position = id; 
+                stereo = id; 
+                time = id; 
+                title = id; 
+                visbox = id; 
+                volume = id; 
+            }; 
+            SUPERCLASS = UserInterface; 
+        }, 
+        {
+            ACTIONS = {
+                eject = id; 
+                next = id; 
+                pause = id; 
+                play = id; 
+                playlistAddDir = id; 
+                playlistAddFile = id; 
+                playlistAddURL = id; 
+                playlistCropSelection = id; 
+                playlistInvertSelection = id; 
+                playlistNew = id; 
+                playlistOpen = id; 
+                playlistRandomize = id; 
+                playlistRemoveAll = id; 
+                playlistRemoveSelected = id; 
+                playlistReverse = id; 
+                playlistSave = id; 
+                playlistSelectAll = id; 
+                playlistSortByFilename = id; 
+                playlistSortByPathPlusFileName = id; 
+                playlistSortByTitle = id; 
+                playlistZeroSelection = id; 
+                previous = id; 
+                repeat = id; 
+                showFileInfoBox = id; 
+                shuffle = id; 
+                songposition_slider = id; 
+                stop = id; 
+                volume_slider = id; 
+            }; 
+            CLASS = UserInterface; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = Plugin; 
+        }, 
+        {CLASS = VisEntry; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = Visualization; LANGUAGE = ObjC; SUPERCLASS = NSView; }
+    ); 
+    IBVersion = 1; 
+}

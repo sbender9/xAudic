@@ -1,0 +1,157 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                about = id; 
+                configureUserInterface = id; 
+                configureVisualization = id; 
+                showBUGS = id; 
+                showCHANGES = id; 
+                showCOPYING = id; 
+                showPlaylistEditor = id; 
+                showREADME = id; 
+                showUICreation = id; 
+                userInterfacesAction = id; 
+                visAction = id; 
+            }; 
+            CLASS = AppDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                aboutPanel = id; 
+                aboutText = id; 
+                noAdvanceMenuItem = id; 
+                preferences = id; 
+                repeatMenuItem = id; 
+                shuffleMenuItem = id; 
+                timeElapsedMenuItem = id; 
+                timeRemainingMenuItem = id; 
+                uiConfigMenuItem = id; 
+                userInterfacesMenu = id; 
+                visualizationMenu = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                eject_pressed = id; 
+                eq_button = id; 
+                fwd_pressed = id; 
+                pause_pressed = id; 
+                pl_button = id; 
+                play_pressed = id; 
+                prev_pressed = id; 
+                showHelp = id; 
+                stop_pressed = id; 
+                toggle_repeat = id; 
+                toggle_shuffle = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {show = id; }; 
+            CLASS = NibObject; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                eject = id; 
+                next = id; 
+                pause = id; 
+                play = id; 
+                playlistAddDir = id; 
+                playlistAddFile = id; 
+                playlistAddURL = id; 
+                playlistCropSelection = id; 
+                playlistInvertSelection = id; 
+                playlistNew = id; 
+                playlistOpen = id; 
+                playlistRandomize = id; 
+                playlistRemoveAll = id; 
+                playlistRemoveSelected = id; 
+                playlistReverse = id; 
+                playlistSave = id; 
+                playlistSelectAll = id; 
+                playlistSortByFilename = id; 
+                playlistSortByPathPlusFileName = id; 
+                playlistSortByTitle = id; 
+                playlistZeroSelection = id; 
+                previous = id; 
+                repeat = id; 
+                showFileInfoBox = id; 
+                shuffle = id; 
+                songposition_slider = id; 
+                stop = id; 
+                volume_slider = id; 
+            }; 
+            CLASS = PlaylistEditor; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                groupView = id; 
+                oldScrollerTarget = id; 
+                tableScrollView = id; 
+                tableView = id; 
+            }; 
+            SUPERCLASS = NSBox; 
+        }, 
+        {
+            ACTIONS = {cancel = id; defaults = id; ok = id; valueChanged = id; }; 
+            CLASS = Preferences; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {generalView = id; inputView = id; tabView = id; }; 
+            SUPERCLASS = NibObject; 
+        }, 
+        {
+            ACTIONS = {close = id; }; 
+            CLASS = SkinBrowser; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {browser = id; }; 
+            SUPERCLASS = NibObject; 
+        }, 
+        {
+            ACTIONS = {
+                eject = id; 
+                next = id; 
+                openFilePanel = id; 
+                pause = id; 
+                play = id; 
+                playlistAddDir = id; 
+                playlistAddFile = id; 
+                playlistAddURL = id; 
+                playlistCropSelection = id; 
+                playlistInvertSelection = id; 
+                playlistNew = id; 
+                playlistOpen = id; 
+                playlistRandomize = id; 
+                playlistRemoveAll = id; 
+                playlistRemoveSelected = id; 
+                playlistReverse = id; 
+                playlistSave = id; 
+                playlistSelectAll = id; 
+                playlistSortByFilename = id; 
+                playlistSortByPathPlusFileName = id; 
+                playlistSortByTitle = id; 
+                playlistZeroSelection = id; 
+                previous = id; 
+                repeat = id; 
+                showElapsedTime = id; 
+                showFileInfoBox = id; 
+                showRemainingTime = id; 
+                shuffle = id; 
+                songposition_slider = id; 
+                stop = id; 
+                toggleNoPlaylistAdvance = id; 
+                toggleRepeat = id; 
+                toggleShuffle = id; 
+                volume_slider = id; 
+            }; 
+            CLASS = UITie; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

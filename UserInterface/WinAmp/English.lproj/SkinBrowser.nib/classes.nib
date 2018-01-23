@@ -1,0 +1,20 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {show = id; }; 
+            CLASS = NibObject; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {browserAction = id; close = id; }; 
+            CLASS = SkinBrowser; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {browser = id; }; 
+            SUPERCLASS = NibObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

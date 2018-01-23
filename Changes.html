@@ -1,0 +1,180 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>xAudic Change Log</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<center><h1>xAudic Change Log</h2></center>
+
+<p><strong>0.21</strong></p>
+
+<ul>
+    <li>now works on MacOS 10.1</li>
+    <li>supports filenames in other languages (Thanks to Shinichiro Shoji for the fixes)</li>
+    <li>adding a directory to the playlist really works now</li>
+</ul>
+
+
+<p><strong>0.20</strong></p>
+
+<ul>
+    <li>New name: xAudic</li>
+    <li>drag/drop add directory works properly</li>
+    <li>added user interface plugin interface (see UICreation.html)</li>
+    <li>added some new user interfaces </li>
+    <li>added visualization plugin interface</li>
+    <li>added two new visualizations (ported from xmms)</li>
+    <li>now link all the built-in plugins directly instead of using  bundles, faster load</li>
+    <li>better visualization performance </li>
+    <li>Equalizer can be now shaded </li>
+    <li>lots of fixes to moving, shading, and restoring the WinAmp UI windows</li>
+    <li>fixed problem with invalid MP3 files crashing the application</li>
+</ul>
+
+<p><strong>0.13</strong></p>
+
+<ul>
+    <li>fixed sizing of file info box</li>
+    <li>file info can now show multiple values for one tag</li>
+    <li>fixed problem with wrong id3 tag being used in the
+        playlist</li>
+    <li>http streaming working again</li>
+    <li>application version number now set</li>
+    <li>implemented playlist randomize, reverse and sort</li>
+    <li>made space key pause </li>
+</ul>
+
+<p><strong>0.12</strong></p>
+
+<ul>
+    <li>EQ and Playlist windows will now stay hidden </li>
+    <li>windows don't pop to the front at odd times</li>
+    <li>playlist window now updates when a directory is added</li>
+    <li>fixed crash when non mp3's are added to the playlist</li>
+    <li>fixed time display</li>
+    <li>visualizations now synced with sound output</li>
+    <li>song position slider now works</li>
+    <li>ends of songs no longer get cut off</li>
+    <li>fixed volume slider </li>
+</ul>
+
+<p><strong>0.10</strong></p>
+
+<ul>
+    <li>fixed problem with song titles not showing up correctly
+        in the playlist.</li>
+    <li>updated the mp3 decoder, 160Kbps mp3's now work </li>
+</ul>
+
+<p><strong>0.8</strong></p>
+
+<ul>
+    <li>works on MacOS X (MacOS X Server no longer supported)</li>
+    <li>new file icons from Donald Tripton</li>
+    <li>moving the application to another directory will not
+        break the skin preference if the skin is in the app
+        wrapper (from Todd Thomas <a
+        href="mailto:rtthomas@mediaone.net">rtthomas@mediaone.net</a>).</li>
+    <li>bogus files will not show up in the skin browser (from
+        Todd Thomas <a href="mailto:rtthomas@mediaone.net">rtthomas@mediaone.net</a>)</li>
+    <li>support for .wsz skin files</li>
+    <li>fixed minor skin issues</li>
+</ul>
+
+<p><strong>0.7</strong></p>
+
+<ul>
+    <li>fixed bugs with some mp3's crashing or hanging the app</li>
+    <li>some ID3v2 tags would crash id3lib </li>
+</ul>
+
+<p><strong>0.6</strong></p>
+
+<ul>
+    <li>fixed bug which caused some files either crash the app,
+        or hang it up after playing</li>
+    <li>added ID3 v2.3 support </li>
+    <li>the visualization on the playlist window would not go
+        away then the window was too small</li>
+    <li>added alert box when no input plugin can be found for a
+        filen</li>
+    <li>removed mpg123 and mpeg3play input plugins</li>
+    <li>default filename extension preference now works</li>
+    <li>now displays bitrate for VBR files correctly</li>
+    <li>fixed another playlist save bug</li>
+    <li>ported new effects plugins from x11amp (Echo, Stereo, and
+        SurroundEcho) </li>
+</ul>
+
+<p><strong>0.5</strong></p>
+
+<ul>
+    <li>nailed some huge memory leaks (still seems to use to much
+        memory?)</li>
+    <li>fixed playlist saving</li>
+    <li>now handles VBR encoded mp3's better</li>
+    <li>eq now works with Xing input plugin</li>
+    <li>http streaming works at 44kHz &amp;&amp; 11kHz only </li>
+    <li>(I can't seem to get SoundKit to handle anything other
+        than 44kHz or 11kHz)</li>
+    <li>new application icon(Thanks to John Ostrowick <a
+        href="mailto:jon@colossus.cs.wits.ac.za">jon@colossus.cs.wits.ac.za</a>)</li>
+    <li>implemented drag &amp; drop to windows </li>
+    <li>moved to Xing decoder from FreeAmp (less buggy) </li>
+</ul>
+
+<p><strong>0.4</strong></p>
+
+<ul>
+    <li>fixed problem with white boxes on TextBoxes</li>
+    <li>implemented playlist window sizing</li>
+    <li>added ability to hide main player window</li>
+    <li>added visiualizations to playlist window (only when main
+        window is hidden)</li>
+    <li>implemented visualizations when the main window is shaded</li>
+    <li>included a MacOS skin (thanks to Tobias of DiSTORTiON <a
+        href="mailto:(toe_dst@iname.com">(toe_dst@iname.com</a>))</li>
+    <li>fixed bug with menu showing up in the wrong place</li>
+    <li>fixed bug with app getting stuck sometimes after playing
+        a song</li>
+    <li>implemented playlist entry moving with Control-Drag</li>
+    <li>now checks for unsaved playlist when exiting</li>
+    <li>fixed preamp line the the Eq graph</li>
+    <li>now sets the volume properly on startup </li>
+</ul>
+
+<p><strong>0.3</strong></p>
+
+<ul>
+    <li>much less CPU usage, down to around 10% (with no
+        Visualizations)</li>
+    <li>beginning of Shoutcast support in SkySound (Doesn't quite
+        work. Help?)</li>
+    <li>added option to put the close box on the left of the main
+        window</li>
+    <li>fixed crashes with the playlist position getting out of
+        sync</li>
+    <li>fixed crashes when shuffle is on and only one song in the
+        playlist</li>
+    <li>fixed problem with the Dummy sound plugin getting enabled
+        by default </li>
+</ul>
+
+<p><strong>0.2</strong></p>
+
+<ul>
+    <li>New MPEG decoder from the SkySound Project</li>
+    <li>Slow CPU option</li>
+    <li>Faster visualization stuff</li>
+    <li>Now handles files with no extention</li>
+    <li>Playlist &quot;Add Directory&quot; now works properly</li>
+    <li>Playlist position is saved now</li>
+    <li>Implemented shuffle and repeat</li>
+</ul>
+</body>
+</html>
